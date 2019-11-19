@@ -22,3 +22,7 @@ def main(urd):
 	print('\n# Load and print ex3file')
 	ex3file = job3.load('ex3file')
 	print(ex3file)
+
+	print('\n# The job.filename()-function is used to get absolute paths to files in jobs.')
+	print('# For example, here is the path to the last job (filename=\'\')')
+	print(job3.filename(''))
