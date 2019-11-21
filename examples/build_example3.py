@@ -12,9 +12,8 @@ def main(urd):
 		)
 	)
 
-	print('\n# Read and print stored stdout for some of the processes')
-	from glob import glob
-	for fn in glob(job.filename('OUTPUT/*'))[:5]:
-		print(fn)
-		with open(fn, 'rt') as fh:
-			print(fh.read())
+	print('\n# Read and print stored stdout for synthesis')
+	print(job.output('synthesis'))
+	print('\n# Read and print stored stdout for everything')
+	print(job.output())
+
