@@ -15,12 +15,13 @@ def main(urd):
 
 
 	print('\n# Print job post information, including profiling info')
-	print(job.post())
+	print(job.post)
 
 
 	print('\n# Print job parameters')
-	print(job.params())
+	print(job.params)
 
 
 	print('\n# Print job\'s Python interpreter')
-	print(job.params().python)
+	print(job.params.python)
+

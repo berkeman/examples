@@ -16,7 +16,7 @@ def main(urd):
 	print('"""' + res3 + '"""')
 
 	print('\n# These files are stored by "method3"')
-	for fn in job3.post().files:
+	for fn in job3.post.files:
 		print('  ' + fn)
 
 	print('\n# Load and print ex3file')
