@@ -16,4 +16,6 @@ def main(urd):
 	print(job.output('synthesis'))
 	print('\n# Read and print stored stdout for everything')
 	print(job.output())
+	print('\n# Read and print stored stdout for analysis process 2')
+	print(job.output(2))
 
